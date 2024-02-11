@@ -1,0 +1,25 @@
+﻿<Window x:Class="lab2Popof.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab2Popof"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="400">
+    <Grid>
+        <StackPanel Margin="10">
+            <TextBox x:Name="Firstside" Text="Firstside" Margin="0,0,0,10"/>
+            <TextBox x:Name="Secondside" Text="Secondside" Margin="0,0,0,10"/>
+            <TextBox x:Name="AngleBetween" Text="AngleBetween" Margin="0,0,0,10"/>
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                <RadioButton x:Name="RightTriangleRadioButton" Content="RightTriangle" Margin="0,0,30,0"/>
+                <RadioButton x:Name="IsoscelesTriangleRadioButton" Content="IsoscelesTriangle"/>
+                <RadioButton x:Name="EquilateralTriangleRadioButton" Content="EquilateralTriangle" Margin="30,0,10,0"/>
+            </StackPanel>
+
+            <Button x:Name="CalculateButton" Content="Calculate" Margin="0,0,0,10" Click="CalculateButton_Click"/>
+            <TextBlock x:Name="Square" Text="Area: " Margin="0,0,0,10"/>
+            <TextBlock x:Name="Perimetr" Text="Perimetr: "/>
+        </StackPanel>
+    </Grid>
+</Window>
